@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img id = "hlavni-obrazek" src="klubovna43.jpg" width="4000" height="3000" alt="klubovna" usemap="#mistnost-map">
+        <map name="mistnost-map">
+            <area shape="rect" coords="424,2240,788,2540" href="světlo.pdf"> <!--koberec-->
+            <area shape="rect" coords="3000,1776,3444,1930" href="klíč.pdf"> <!--stoly-->
+            <area shape="rect" coords="2120,1432,2252,1560" href="knihy.pdf"><!--knihovna dole-->
+            <area shape="rect" coords="0,1948,190,2200" href="konec.pdf"><!--červená bedna vlevo nakraji-->
+            <area shape="rect" coords="2644,1156,2772,1276" href="rubik.pdf"> <!--rubik kostka na polici-->
+            
+            
+           
+        </map>
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const oblast1 = document.getElementById('zmena-obrazku1');
+            const oblast2 = document.getElementById('zmena-obrazku2');
+            const oblast3 = document.getElementById('zmena-obrazku3');
+            const oblast4 = document.getElementById('zmena-obrazku4');
+            const oblast5 = document.getElementById('zmena-obrazku5');
+            const oblast6 = document.getElementById('zmena-obrazku6');
+            const hlavniObrazek = document.getElementById('hlavni-obrazek');
+
+            oblast1.addEventListener('click', function () {
+                // Změňte obrázek na první obrázek
+                hlavniObrazek.src = 'učebnaq.png';
+            });
+
+            oblast2.addEventListener('click', function () {
+                // Změňte obrázek na druhý obrázek
+                hlavniObrazek.src = 'učebnax.png';
+            });
+            oblast3.addEventListener('click', function () {
+                // Změňte obrázek na druhý obrázek
+                hlavniObrazek.src = 'učebnay.png';
+            });
+            oblast4.addEventListener('click', function () {
+                // Změňte obrázek na druhý obrázek
+                hlavniObrazek.src = 'učebnaf.png';
+            });
+            oblast5.addEventListener('click', function () {
+                // Změňte obrázek na druhý obrázek
+                hlavniObrazek.src = 'učebnaj.png';
+            });
+            oblast6.addEventListener('click', function () {
+                // Změňte obrázek na první obrázek
+                hlavniObrazek.src = 'učebnam.png';
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
